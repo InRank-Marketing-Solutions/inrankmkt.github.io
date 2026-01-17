@@ -16,11 +16,13 @@
     --dark-text: #1a2b4a;
     --body-text: #555;
     --light-text: #888;
+    --bright-text: #ff7043;
 
     /* Background Colors */
     --white: #ffffff;
     --light-bg: #f8f9fc;
     --lavender-bg: #f5f0ff;
+    --burgundy-bg: #f1ecec;
     --blue-soft: #e8f4ff;
     --purple-soft: #f0e8ff;
 
@@ -28,6 +30,7 @@
     --gradient-hero: linear-gradient(135deg, #f8f9fc 0%, #e8f4ff 50%, #f0e8ff 100%);
     --gradient-bg: linear-gradient(135deg, #f8f9fc 0%, #e8f4ff 50%, #f0e8ff 100%);
     --gradient-orange: linear-gradient(135deg, #ff7043 0%, #ffab91 100%);
+    --gradient-orange-reverse: linear-gradient(45deg, #ff7043 0%, #ffab91 100%);
     --gradient-blue: linear-gradient(135deg, #4a9eff 0%, #81c4ff 100%);
     --gradient-purple: linear-gradient(135deg, #9c27b0 0%, #ce93d8 100%);
     --gradient-text: linear-gradient(90deg, #ff7043, #9c27b0);
@@ -121,9 +124,7 @@ img {
 /* Section Badge */
 .section-badge {
     display: inline-block;
-    padding: 8px 20px;
-    background: var(--primary-orange);
-    color: var(--white);
+    color: var(--bright-text);
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -133,7 +134,7 @@ img {
 }
 
 .section-badge.light {
-    background: rgba(255, 255, 255, 0.2);
+    color: var(--light-text);
 }
 
 /* Section Header */
@@ -183,6 +184,7 @@ img {
 }
 
 .btn-primary:hover {
+    background: var(--gradient-orange-reverse);
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(255, 112, 67, 0.4);
 }
@@ -194,8 +196,8 @@ img {
 }
 
 .btn-outline:hover {
-    background: var(--dark-text);
-    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(255, 112, 67, 0.4);
 }
 
 .btn-purple {
@@ -335,13 +337,10 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: var(--white);
     padding: 10px 20px;
-    border-radius: var(--radius-full);
     font-size: 14px;
     font-weight: 600;
     color: var(--primary-orange);
-    box-shadow: var(--shadow-md);
     margin-bottom: 30px;
 }
 
@@ -495,7 +494,7 @@ img {
    ======================================== */
 .grow-section {
     padding: var(--section-padding) 0;
-    background: var(--lavender-bg);
+    background: var(--burgundy-bg);
 }
 
 /* ========================================
@@ -1042,100 +1041,6 @@ blockquote {
     padding: 0 30px 25px;
     color: var(--body-text);
     line-height: 1.8;
-}
-
-/* ========================================
-   CONTACT SECTION
-   ======================================== */
-.contact {
-    padding: var(--section-padding) 0;
-    background: var(--blue-soft);
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 60px;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.info-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: var(--white);
-    padding: 25px 30px;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-}
-
-.info-icon {
-    width: 60px;
-    height: 60px;
-    background: var(--gradient-orange);
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-size: 24px;
-    flex-shrink: 0;
-}
-
-.info-content h4 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.info-content p {
-    color: var(--body-text);
-    font-size: 14px;
-}
-
-.contact-form {
-    background: var(--white);
-    padding: 50px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 18px 25px;
-    border: 2px solid var(--light-bg);
-    border-radius: var(--radius-md);
-    font-family: var(--font-family);
-    font-size: 15px;
-    transition: var(--transition);
-    background: var(--light-bg);
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: var(--primary-orange);
-    background: var(--white);
-}
-
-.contact-form textarea {
-    resize: vertical;
-    min-height: 120px;
 }
 
 /* ========================================
