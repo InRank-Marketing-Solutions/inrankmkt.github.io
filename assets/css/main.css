@@ -408,7 +408,7 @@ img {
     width: 350px;
     height: 250px;
     background-color: var(--gradient-blue);
-    background: url("./hero.png");
+    background: url("/assets/images/hero.png");
     background-size: 100%;
     background-position: center;
     animation: pulse 3s ease-in-out infinite;
@@ -1062,6 +1062,89 @@ blockquote {
     color: var(--body-text);
     line-height: 1.8;
 }
+
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
+
+.contact {
+    padding: var(--section-padding) 0;
+    background: var(--blue-soft);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-content {
+    padding: 40px;
+    margin: auto;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-item ul {
+    align-items: center;
+    gap: 12px;
+
+}
+
+.contact-item ul li {
+    list-style: none;
+    padding: 8px;
+    border-radius: var(--radius-md);
+}
+
+.contact-item ul li i {
+    color: var(--primary-orange);
+    font-size: 24px;
+}
+
+.contact-text {
+    padding: 40px;
+    background: linear-gradient(135deg, #f8f9fc 0%, #ffab91 50%, #c251f3 100%);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-text-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-orange);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-text-icon i {
+    color: var(--white);
+    font-size: 24px;
+}
+
+.contact-text h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-text p {
+    padding-top: 30px;
+    line-height: 1.8;
+    color: var(--body-text);
+    font-size: 14px;
+}
+
 
 /* ========================================
    FOOTER

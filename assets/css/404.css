@@ -1,0 +1,9 @@
+/* ========================================
+   404 SECTION
+   ======================================== */
+
+.page-header {
+    padding: 150px 0 10px;
+    background: var(--gradient-hero);
+    text-align: center;
+}
