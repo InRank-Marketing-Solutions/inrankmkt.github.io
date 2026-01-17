@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | InRank Marketing</title>
+    <title>SEO Services | InRank Marketing</title>
     <meta name="description"
-        content="Explore our comprehensive digital marketing services: SEO, PPC, Social Media, Web Design, and Professional Photography.">
+        content="Professional SEO services to boost your rankings: On-Page, Off-Page, Technical SEO, Local SEO, and more. Drive organic traffic today.">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -16,8 +16,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: var(--gradient-hero);
+            text-align: center;
+        }
+
+        .service-category {
+            padding: 80px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .service-category:last-child {
+            border-bottom: none;
+        }
+
+        .cat-header {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .cat-header h3 {
+            font-size: 32px;
+            color: var(--primary-orange-dark);
+        }
+    </style>
 </head>
 
 <body>
@@ -45,139 +70,68 @@
     <!-- PAGE HEADER -->
     <section class="page-header">
         <div class="container">
-            <span class="hero-badge"><i class="fas fa-briefcase"></i> What We Do</span>
-            <h1>Our <span class="text-gradient">Services</span></h1>
-            <p style="max-width: 600px; margin: 20px auto 0;">Comprehensive solutions to elevate your brand, drive
-                traffic, and convert visitors into loyal customers.</p>
+            <span class="hero-badge"><i class="fas fa-search"></i> SEO Services</span>
+            <h1>Search Engine <span class="text-gradient">Optimization</span></h1>
+            <p style="max-width: 600px; margin: 20px auto 0;">Dominate search results with our comprehensive,
+                data-driven SEO strategies designed to increase visibility and drive revenue.</p>
         </div>
     </section>
 
-    <!-- MARKETING SERVICES -->
+    <!-- SEO SERVICES -->
     <section class="service-category">
         <div class="container">
             <div class="cat-header">
-                <h3>Marketing Services</h3>
+                <h3>Our SEO Capabilities</h3>
                 <div style="width: 50px; height: 3px; background: var(--gradient-orange); margin: 15px auto;"></div>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon icon-blue">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-file-alt"></i>
                     </div>
-                    <h3><a href="search-engine-optimization-services.html"
-                            style="color: inherit; text-decoration: none;">Search Engine Optimization (SEO)</a></h3>
-                    <p>Boost your organic rankings and drive long-term traffic with our data-driven SEO strategies
-                        tailored to your industry.</p>
+                    <h3>On-Page SEO</h3>
+                    <p>Optimizing individual web pages to rank higher, including content, title tags, meta descriptions,
+                        and internal linking.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon icon-orange">
-                        <i class="fas fa-mouse-pointer"></i>
+                        <i class="fas fa-link"></i>
                     </div>
-                    <h3>Pay-Per-Click (PPC) Advertising</h3>
-                    <p>Get immediate results with targeted ad campaigns on Google and Social Media that maximize your
-                        ROI.</p>
+                    <h3>Off-Page SEO</h3>
+                    <p>Building authority through high-quality backlinks, social signals, and brand mentions to improve
+                        your site's reputation.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon icon-purple">
-                        <i class="fas fa-share-nodes"></i>
+                        <i class="fas fa-cogs"></i>
                     </div>
-                    <h3>Social Media Marketing (SMM)</h3>
-                    <p>Build a loyal community and engage with your audience across platforms like Facebook, Instagram,
-                        and LinkedIn.</p>
+                    <h3>Technical SEO</h3>
+                    <p>Ensuring your website meets the technical requirements of modern search engines with improved
+                        crawling and indexing.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon icon-blue">
-                        <i class="fas fa-pen-nib"></i>
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3>Content Marketing</h3>
-                    <p>Attract and retain your audience with high-quality, valuable content that establishes your
-                        authority and drives action.</p>
+                    <h3>Local SEO</h3>
+                    <p>Optimizing your online presence to attract more business from relevant local searches on Google
+                        Maps and search.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon icon-orange">
-                        <i class="fas fa-robot"></i>
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <h3>Generative Engine Optimization</h3>
-                    <p>Future-proof your brand by optimizing for AI-driven search engines like ChatGPT, Gemini, and
-                        Perplexity.</p>
+                    <h3>E-commerce SEO</h3>
+                    <p>Specialized strategies for online stores to improve product visibility, drive traffic, and
+                        convert shoppers.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon icon-purple">
-                        <i class="fas fa-tachometer-alt"></i>
+                        <i class="fas fa-key"></i>
                     </div>
-                    <h3>Performance Optimization</h3>
-                    <p>Enhance your website’s speed, responsiveness, and overall performance to improve user experience
-                        and SEO rankings.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WEB DESIGN & DEVELOPMENT -->
-    <section class="service-category" style="background-color: var(--light-bg);">
-        <div class="container">
-            <div class="cat-header">
-                <h3>Web Design & Development</h3>
-                <div style="width: 50px; height: 3px; background: var(--gradient-blue); margin: 15px auto;"></div>
-            </div>
-            <div class="services-grid" style="justify-content: center; display: flex;">
-                <div class="service-card" style="max-width: 400px; width: 100%;">
-                    <div class="service-icon icon-orange">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <h3>Web Designing</h3>
-                    <p>Custom, responsive, and user-friendly websites designed to convert visitors and reflect your
-                        brand identity.</p>
-                </div>
-                <div class="service-card" style="max-width: 400px; width: 100%;">
-                    <div class="service-icon icon-purple">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Robust, scalable, and secure web solutions built with the latest technologies to ensure high
-                        performance and seamless functionality.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PHOTOGRAPHY -->
-    <section class="service-category">
-        <div class="container">
-            <div class="cat-header">
-                <h3>Photography Services</h3>
-                <div style="width: 50px; height: 3px; background: var(--gradient-purple); margin: 15px auto;"></div>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon icon-purple">
-                        <i class="fas fa-box-open"></i>
-                    </div>
-                    <h3>Product Photography</h3>
-                    <p>High-quality images that showcase your products in the best light, perfect for e-commerce and
-                        catalogs.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon icon-orange">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Corporate Photography</h3>
-                    <p>Professional headshots, office vibes, and team photos to humanize your brand and build trust.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon icon-blue">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>Event Photography</h3>
-                    <p>Capture the energy and key moments of your corporate events, conferences, and celebrations.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon icon-purple">
-                        <i class="fas fa-camera-retro"></i>
-                    </div>
-                    <h3>Lifestyle & Social Media</h3>
-                    <p>Authentic, engaging visuals designed specifically for your social media channels and marketing
-                        campaigns.</p>
+                    <h3>Keyword Research</h3>
+                    <p>In-depth analysis to identify high-potential keywords that your target audience is searching for.
+                    </p>
                 </div>
             </div>
         </div>
@@ -186,10 +140,10 @@
     <!-- CONTACT CTA -->
     <section style="padding: 80px 0; text-align: center; background: var(--lavender-bg);">
         <div class="container">
-            <h2>Ready to Grow Your Business?</h2>
-            <p style="margin: 20px 0 30px; color: var(--body-text);">Contact us today for a free consultation and
-                proposal.</p>
-            <a href="index.html#contact" class="btn btn-primary btn-lg">Get Started Now</a>
+            <h2>Ready to Top the Rankings?</h2>
+            <p style="margin: 20px 0 30px; color: var(--body-text);">Let's discuss how we can improve your organic
+                visibility today.</p>
+            <a href="index.html#contact" class="btn btn-primary btn-lg">Get A Free Audit</a>
         </div>
     </section>
 
