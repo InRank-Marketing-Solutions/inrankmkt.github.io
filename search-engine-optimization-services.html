@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEO Services | InRank Marketing</title>
     <meta name="description"
-        content="Professional SEO services to boost your rankings: On-Page, Off-Page, Technical SEO, Local SEO, and more. Drive organic traffic today.">
+        content="Stop Guessing. Start Ranking. We build sustainable growth engines using advanced On-Page, Off-Page, Technical, and Local SEO strategies designed for ROI.">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
@@ -18,29 +18,175 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
     <style>
-        .page-header {
-            padding: 150px 0 80px;
+        /* Page Specific Styles */
+        .page-hero {
+            padding: 180px 0 100px;
             background: var(--gradient-hero);
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
-        .service-category {
-            padding: 80px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        .page-hero h1 {
+            font-size: 52px;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            line-height: 1.2;
         }
 
-        .service-category:last-child {
-            border-bottom: none;
+        .page-hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: var(--body-text);
         }
 
-        .cat-header {
-            margin-bottom: 50px;
-            text-align: center;
+        .tool-logos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            opacity: 0.6;
+            filter: grayscale(100%);
         }
 
-        .cat-header h3 {
+        .tool-logos i {
             font-size: 32px;
-            color: var(--primary-orange-dark);
+            color: var(--dark-text);
+        }
+
+        /* Problem Section */
+        .problem-section {
+            padding: 100px 0;
+            background: #fff;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .problem-card {
+            background: #fff5f5;
+            padding: 40px;
+            border-radius: var(--radius-md);
+            border: 1px solid #ffebee;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .problem-icon {
+            font-size: 40px;
+            color: #d32f2f;
+            margin-bottom: 20px;
+        }
+
+        .problem-card h3 {
+            margin-bottom: 15px;
+            color: #c62828;
+        }
+
+        /* Process Section */
+        .process-section {
+            padding: 100px 0;
+            background: var(--light-bg);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+            position: relative;
+        }
+
+        .process-step {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--primary-blue-dark);
+            opacity: 0.1;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .step-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--dark-text);
+        }
+
+        /* Social Proof Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .stat-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-card);
+        }
+
+        .stat-value {
+            font-size: 42px;
+            font-weight: 800;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .page-hero h1 {
+                font-size: 42px;
+            }
+
+            .problem-grid,
+            .process-steps,
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 32px;
+            }
+
+            .problem-grid,
+            .process-steps,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero {
+                padding: 140px 0 60px;
+            }
         }
     </style>
 </head>
@@ -67,83 +213,282 @@
         </nav>
     </header>
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
+    <!-- HERO SECTION -->
+    <section class="page-hero">
         <div class="container">
-            <span class="hero-badge"><i class="fas fa-search"></i> SEO Services</span>
-            <h1>Search Engine <span class="text-gradient">Optimization</span></h1>
-            <p style="max-width: 600px; margin: 20px auto 0;">Dominate search results with our comprehensive,
-                data-driven SEO strategies designed to increase visibility and drive revenue.</p>
+            <span class="hero-badge"><i class="fas fa-search"></i> Advanced SEO Strategies</span>
+            <h1>Stop Guessing. Start Ranking. <br><span class="text-gradient">Turn Search Traffic into Revenue.</span>
+            </h1>
+            <p>We don't just chase algorithms. We build sustainable growth engines using advanced On-Page, Off-Page,
+                Technical, and Local SEO strategies designed for ROI.</p>
+            <div class="hero-buttons" style="justify-content: center;">
+                <a href="index.html#contact" class="btn btn-primary btn-lg">
+                    Get My Free SEO Audit <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#social-proof" class="btn btn-outline btn-lg">
+                    View Case Studies <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+
+            <!-- Tools/Authority Trust Strip -->
+            <div class="tool-logos">
+                <!-- Using FontAwesome icons as placeholders for tools like Semrush, Ahrefs, GA -->
+                <i class="fab fa-google" title="Google Analytics"></i>
+                <i class="fas fa-magnifying-glass-chart" title="Semrush"></i>
+                <i class="fas fa-chart-simple" title="Ahrefs"></i>
+                <i class="fab fa-wordpress" title="WordPress"></i>
+                <i class="fab fa-yoast" title="Yoast"></i>
+            </div>
         </div>
     </section>
 
-    <!-- SEO SERVICES -->
-    <section class="service-category">
+    <!-- THE PROBLEM SECTION -->
+    <section class="problem-section">
         <div class="container">
-            <div class="cat-header">
-                <h3>Our SEO Capabilities</h3>
-                <div style="width: 50px; height: 3px; background: var(--gradient-orange); margin: 15px auto;"></div>
+            <div class="section-header center">
+                <span class="section-badge" style="background: #d32f2f;">The Challenge</span>
+                <h2>Is Your Website <span class="text-gradient">Invisible</span> to Your Ideal Customer?</h2>
+                <p>A beautiful website is useless if no one can find it. Search engines are evolving every day, and
+                    outdated tactics or technical errors might be holding you back.</p>
             </div>
-            <div class="services-grid">
+
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-arrow-trend-down"></i></div>
+                    <h3>The Plateau</h3>
+                    <p>Your traffic hit a ceiling and hasn’t moved in months. You're stuck and can't seem to break
+                        through to the next level.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-ghost"></i></div>
+                    <h3>The Ghost Town</h3>
+                    <p>You rank for some keywords, but nobody is clicking or converting. High impressions but low
+                        click-through rates.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fas fa-bug"></i></div>
+                    <h3>The Technical Barrier</h3>
+                    <p>Your site is slow, mobile-unfriendly, or held back by indexing errors that prevent Google from
+                        trusting you.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <p style="font-size: 18px; font-weight: 600; color: var(--dark-text);">The Solution: You don’t need more
+                    "tricks." You need a data-backed infrastructure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-badge">Our Expertise</span>
+                <h2>A Holistic Approach to <span class="text-gradient">Search Dominance</span></h2>
+                <p>We optimize every aspect of your online presence to align with your users and search algorithms.</p>
+            </div>
+            <div class="services-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <!-- 1. On-Page SEO -->
                 <div class="service-card">
                     <div class="service-icon icon-blue">
-                        <i class="fas fa-file-alt"></i>
+                        <i class="fas fa-file-code"></i>
                     </div>
                     <h3>On-Page SEO</h3>
-                    <p>Optimizing individual web pages to rank higher, including content, title tags, meta descriptions,
-                        and internal linking.</p>
+                    <p><strong>Content That Ranks & Converts.</strong> We optimize every visible element of your site.
+                    </p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> <strong>Keyword Intent Matching:</strong> Targeting terms that
+                            drive sales.</li>
+                        <li><i class="fas fa-check"></i> <strong>Content Optimization:</strong> Headers (H1-H6), Meta
+                            Tags, Alt Text.</li>
+                        <li><i class="fas fa-check"></i> <strong>Internal Linking:</strong> Building logical site
+                            architecture.</li>
+                    </ul>
                 </div>
+
+                <!-- 2. Technical SEO -->
                 <div class="service-card">
                     <div class="service-icon icon-orange">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h3>Off-Page SEO</h3>
-                    <p>Building authority through high-quality backlinks, social signals, and brand mentions to improve
-                        your site's reputation.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon icon-purple">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-server"></i>
                     </div>
                     <h3>Technical SEO</h3>
-                    <p>Ensuring your website meets the technical requirements of modern search engines with improved
-                        crawling and indexing.</p>
+                    <p><strong>The Foundation of Performance.</strong> We fix errors that block indexing.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> <strong>Core Web Vitals:</strong> Improving speed and
+                            stability.</li>
+                        <li><i class="fas fa-check"></i> <strong>Crawlability:</strong> Fixing broken links, 404s,
+                            robots.txt.</li>
+                        <li><i class="fas fa-check"></i> <strong>Structured Data:</strong> Implementing Schema Markup.
+                        </li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon icon-blue">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Local SEO</h3>
-                    <p>Optimizing your online presence to attract more business from relevant local searches on Google
-                        Maps and search.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon icon-orange">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h3>E-commerce SEO</h3>
-                    <p>Specialized strategies for online stores to improve product visibility, drive traffic, and
-                        convert shoppers.</p>
-                </div>
+
+                <!-- 3. Off-Page SEO -->
                 <div class="service-card">
                     <div class="service-icon icon-purple">
-                        <i class="fas fa-key"></i>
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <h3>Keyword Research</h3>
-                    <p>In-depth analysis to identify high-potential keywords that your target audience is searching for.
+                    <h3>Off-Page SEO</h3>
+                    <p><strong>Authority, Trust, & Reputation.</strong> We build authority through ethical strategies.
                     </p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> <strong>Link Building:</strong> High-quality backlinks from
+                            authoritative domains.</li>
+                        <li><i class="fas fa-check"></i> <strong>Digital PR:</strong> Earning mentions in industry
+                            publications.</li>
+                        <li><i class="fas fa-check"></i> <strong>Brand Signal Audit:</strong> Managing brand reputation.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 4. Local SEO -->
+                <div class="service-card">
+                    <div class="service-icon icon-blue">
+                        <i class="fas fa-map-location-dot"></i>
+                    </div>
+                    <h3>Local SEO</h3>
+                    <p><strong>Capture Your Community.</strong> Dominate your local market.</p>
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check"></i> <strong>Google Business Profile:</strong> Full optimization of
+                            GMB.</li>
+                        <li><i class="fas fa-check"></i> <strong>Local Citations:</strong> Consistent NAP across
+                            directories.</li>
+                        <li><i class="fas fa-check"></i> <strong>Map Pack Strategy:</strong> Techniques for "Top 3" map
+                            results.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT CTA -->
-    <section style="padding: 80px 0; text-align: center; background: var(--lavender-bg);">
+    <!-- PROCESS SECTION -->
+    <section class="process-section">
         <div class="container">
-            <h2>Ready to Top the Rankings?</h2>
-            <p style="margin: 20px 0 30px; color: var(--body-text);">Let's discuss how we can improve your organic
-                visibility today.</p>
-            <a href="index.html#contact" class="btn btn-primary btn-lg">Get A Free Audit</a>
+            <div class="section-header center">
+                <span class="section-badge">The Method</span>
+                <h2>How We Engineer <span class="text-gradient">Your Growth</span></h2>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <span class="step-number">01</span>
+                    <div class="step-title">The Audit</div>
+                    <p>We perform a deep-dive scan of your current presence to identify leaks and opportunities.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">02</span>
+                    <div class="step-title">The Strategy</div>
+                    <p>We build a roadmap tailored to your industry, competitors, and specific business goals.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">03</span>
+                    <div class="step-title">The Execution</div>
+                    <p>We implement the technical fixes and create the high-quality content needed to rank.</p>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">04</span>
+                    <div class="step-title">The Reporting</div>
+                    <p>Transparent, monthly reports. No jargon—just metrics that matter (Traffic, Leads, Revenue).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF SECTION -->
+    <section class="testimonials" id="social-proof">
+        <div class="container">
+            <div class="section-header center" style="margin-bottom: 40px;">
+                <span class="section-badge light">Success Stories</span>
+                <h2 style="color: white;">Results That Speak for <span style="color: #ffccbc;">Themselves</span></h2>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">+240%</span>
+                    <p>Organic Traffic Increase in 6 Months</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">Top 3</span>
+                    <p>Map Pack Ranking for 15+ Keywords</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">-40%</span>
+                    <p>Reduction in Cost-Per-Acquisition</p>
+                </div>
+            </div>
+
+            <div class="testimonial-quote" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <i class="fas fa-quote-left quote-icon" style="display: inline-block;"></i>
+                <blockquote>
+                    "They didn't just promise rankings; they helped us understand how search impacts our bottom line.
+                    The best investment we've made this year."
+                </blockquote>
+                <div class="testimonial-author" style="justify-content: center;">
+                    <div class="author-info">
+                        <strong style="font-size: 20px;">Trusted Client</strong>
+                        <span>CEO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-badge">FAQ</span>
+                <h2>Frequently Asked <span class="text-gradient">Questions</span></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does it take to see results?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>SEO is a marathon, not a sprint. While technical fixes can show results in weeks, substantial
+                            organic growth typically builds over 3–6 months. We focus on sustainable, long-term gains
+                            that compound over time.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the difference between SEO and Google Ads?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Google Ads is renting space; SEO is owning the building. Ads stop working the moment you stop
+                            paying. SEO builds an asset that drives traffic 24/7 without a cost per click.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you guarantee #1 rankings?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No agency can ethically guarantee a specific ranking because Google's algorithm is
+                            proprietary and constantly changing. However, we guarantee we will execute the best
+                            practices that are proven to increase visibility and traffic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section style="padding: 100px 0; text-align: center; background: var(--lavender-bg);">
+        <div class="container">
+            <h2>Ready to Climb the Ranks?</h2>
+            <p
+                style="margin: 20px 0 40px; font-size: 18px; color: var(--body-text); max-width: 600px; margin-left: auto; margin-right: auto;">
+                Stop losing leads to competitors on Page 1. Let’s build your strategy today.
+            </p>
+            <a href="index.html#contact" class="btn btn-primary btn-lg">
+                Book Your Strategy Call <i class="fas fa-calendar-check"></i>
+            </a>
         </div>
     </section>
 
@@ -217,6 +562,22 @@
         // Mobile menu toggle
         document.querySelector('.mobile-toggle').addEventListener('click', () => {
             document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
         });
     </script>
 
